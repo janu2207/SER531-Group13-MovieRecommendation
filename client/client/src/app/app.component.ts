@@ -71,7 +71,7 @@ export class AppComponent {
     this.clickMovies=true;
     this.loading=true;
     this.moviePanel=false;
-    
+    console.log(value);
     this.movieSub = this.getMovieDetails();
     this.movieSub.subscribe(result =>{
       this.movieDetails=result[0];
