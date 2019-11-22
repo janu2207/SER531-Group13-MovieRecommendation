@@ -1,17 +1,21 @@
 .example-form {
     min-width: 150px;
     max-width: 500px;
-    width: 100%;
+    width: 200%;
   }
   
   .example-full-width {
-    width: 100%;
+    width: 200%;
   }
 
   .tp-card {
-    max-width: 400px;
+    max-width: 600px;
+    width: 200%;
  }
  .tp-header-image {
     background-image: url('https://www.tutorialspoint.com/materialize/src/html5-mini-logo.jpg');
     background-size: cover;
+ }
+ td{
+   font-size:20px;
  }
