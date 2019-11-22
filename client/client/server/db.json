@@ -1,0 +1,28 @@
+{"movies":[
+    {"id":"one"},
+    {"id":"Two"},
+    {"id":"Three"},
+    {"id":"Sneha"},
+    {"id":"Akhil"},
+    {"id":"prasanth"}
+    ],
+ "moviedetails":[
+    {
+        "name":"abc",
+        "rating":123
+    },
+    {
+        "name":"abc",
+        "rating":123
+    },
+    {
+        "name":"abc",
+        "rating":123
+    },
+    {
+        "name":"abc",
+        "rating":123
+    }
+ ]
+}
+
