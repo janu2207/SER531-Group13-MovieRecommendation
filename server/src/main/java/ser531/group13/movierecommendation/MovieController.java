@@ -2,6 +2,7 @@ package ser531.group13.movierecommendation;
 
 
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -19,6 +20,7 @@ import java.util.stream.Collectors;
 class MovieController {
     
 
+	@CrossOrigin(origins = "http://localhost:4200")
     @GetMapping("/movies/{movieName}")
     @ResponseBody
     public String coolCars(@PathVariable String movieName) throws JsonProcessingException {

@@ -72,9 +72,9 @@ export class AppComponent {
     this.loading=true;
     this.moviePanel=false;
     console.log(value);
-    this.movieSub = this.getMovieDetails();
+    this.movieSub = this.getMovieDetails(value);
     this.movieSub.subscribe(result =>{
-      this.movieDetails=result[0];
+      this.movieDetails=result;
       console.log("result");
       console.log(result);
       this.loading=false;
@@ -85,8 +85,9 @@ export class AppComponent {
     
   }
 
-  getMovieDetails() : Observable<any[]>{
-    return this.http.get<any[]>("http://localhost:3000/details");
+  getMovieDetails(value:string) : Observable<any[]>{
+    
+    return this.http.get<any[]>("http://localhost:8080/movies/"+value);
   }
 
 
