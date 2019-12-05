@@ -2,7 +2,9 @@
     min-width: 150px;
     max-width: 500px;
     width: 200%;
+    color:white;
   }
+  
   
   .example-full-width {
     width: 200%;
@@ -11,6 +13,7 @@
   .tp-card {
     max-width: 600px;
     width: 200%;
+    
  }
  .tp-header-image {
     background-image: url('https://www.tutorialspoint.com/materialize/src/html5-mini-logo.jpg');
@@ -19,3 +22,22 @@
  td{
    font-size:20px;
  }
+
+ .mat-focused .placeholder {
+  color:white;
+}
+.mat-focused .mat-form-field-label {
+      /*change color of label*/
+      color: white !important;
+  }
+
+ .mat-form-field-underline {
+   /*change color of underline*/
+    background-color: white !important;
+ } 
+
+.mat-form-field-ripple {
+   /*change color of underline when focused*/
+   background-color: yellow !important;;
+ } 
+ 

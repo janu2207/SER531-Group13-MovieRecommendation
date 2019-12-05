@@ -1,8 +1,11 @@
-<h1 style="align-content: center"> Movie Recommendation Systems Engine</h1>
+<body>
+<h1 > Movie Recommendation Systems Engine</h1>
 
 <form class="example-form">
   <mat-form-field class="example-full-width">
-    <input type="text" placeholder="Pick one" aria-label="Number" matInput [formControl]="myControl" [matAutocomplete]="auto">
+    Search a Movie:
+    <input matInput   type="text"   aria-label="Number" matInput [formControl]="myControl" [matAutocomplete]="auto">
+
     <mat-autocomplete #auto="matAutocomplete">
       <mat-option *ngFor="let option of filteredOptions | async" [value]="option" (click) ="demo(option)">
         {{option}}
@@ -49,12 +52,17 @@
                         <td>{{movieDetails.genre}}</td>
                     </tr>
                     <tr>
+                      <td>Average User Rating</td>
+                      <td>{{movieDetails.avgUserRating}}/5.0</td>
+                  </tr>
+                    
+                    <tr>
                       <td>tmdb Rating</td>
-                      <td>{{movieDetails.tmdbRating}}</td>
+                      <td>{{movieDetails.tmdbRating}}/10.0</td>
                     </tr>
                     <tr>
                       <td>imdb Rating</td>
-                      <td>{{movieDetails.imdbRating}}</td>
+                      <td>{{movieDetails.imdbRating}}/10.0</td>
                     </tr>
                     <tr>
                       <td>Run Time</td>
@@ -90,8 +98,10 @@
     </div>
 </div>
 
-<router-outlet></router-outlet>
 
+
+<router-outlet></router-outlet>
+</body>
 
 
 
